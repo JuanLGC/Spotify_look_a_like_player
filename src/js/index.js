@@ -1,7 +1,7 @@
 //import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
-
+import MusicPlayer from "./component/songList.js";
 //include bootstrap npm library into the bundle
 import "bootstrap";
 
@@ -12,4 +12,4 @@ import "../styles/index.scss";
 import { Home } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<MusicPlayer />, document.querySelector("#app"));

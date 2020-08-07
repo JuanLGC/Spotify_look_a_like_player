@@ -1,13 +1,47 @@
 @import "~bootstrap/scss/bootstrap.scss";
+body {
+    background-color: #3b3e47;
+}
+ol {
 
-/* 
+    list-style-position: inside;
+    color: white;
+    counter-reset: listCounter;
+    list-style: none;
+}
+ol li{
+    counter-increment: listCounter;
+    background-color: #171718;
+    padding: 0.5rem;
+}
+ol li::before{
+     content: counter(listCounter) ;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+li:hover {
+    background-color: #525252;
+}
 
-*/
+li:active {
+    background-color: #797979;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: #797979;
+}
+
+i:active {
+    color: #a0a0a0;
+}
