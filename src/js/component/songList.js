@@ -156,9 +156,7 @@ export default function MusicPlayer() {
 						className="fa fa-play"
 						aria-hidden="true"
 						onClick={() => {
-							musicPlayer.load();
-							musicPlayer.play();
-							setIsPlaying(true);
+							playMusic();
 						}}
 					/>
 				</div>
