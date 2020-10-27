@@ -8,11 +8,15 @@ ol {
     color: white;
     counter-reset: listCounter;
     list-style: none;
+    margin-bottom: 5rem
 }
 ol li{
     counter-increment: listCounter;
     background-color: #171718;
     padding: 0.5rem;
+}
+ol li:nth-last-child(){
+    margin-bottom: 15rem;
 }
 ol li::before{
      content: counter(listCounter) ;
@@ -20,6 +24,7 @@ ol li::before{
 
 li:hover {
     background-color: #525252;
+    cursor: pointer;
 }
 
 li:active {
@@ -44,4 +49,8 @@ i:hover {
 
 i:active {
     color: #a0a0a0;
+}
+
+.audio-buttons {
+    cursor: pointer;
 }
